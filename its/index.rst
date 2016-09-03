@@ -26,7 +26,7 @@ Semut Parking
 
 Android App di Google Play Store: https://play.google.com/store/apps/details?id=project.bsts.semutparking
 
-.. figure: BITS-Sistem-Manajemen-On-Street-Parking-(T01001)-poster.jpg
+.. figure:: BITS-Sistem-Manajemen-On-Street-Parking-(T01001)-poster.jpg
 
    BITS Sistem Manajemen On-Street Parking (T01001)
 
