@@ -12,7 +12,27 @@ API untuk Emergency Management terdiri dari 3 jenis:
 
 ## REST API
 
-...
+Get Places
+
+GET /places
+
+URL parameters
+
+| Name | Description |
+| :--- | :--- |
+| categories | comma-separated list of place categories. \(see below for recognized categories\) |
+|  |  |
+
+Place categories use OpenStreetMap tags, separated by "\_". Used keys are: [**amenity**](https://wiki.openstreetmap.org/wiki/Key:amenity), [**shop**](https://wiki.openstreetmap.org/wiki/Key:shop), [**tourism**](https://wiki.openstreetmap.org/wiki/Key:tourism). Most used categories include:
+
+| Category | Description |
+| :--- | :--- |
+| amenity\_cafe, amenity\_fast\_food, amenity\_food\_court, amenity\_restaurant | Food & Drink |
+| tourism\_hotel | Hotel |
+| amenity\_hospital | Hospital |
+| amenity\_fuel | Gas Station |
+| shop\_fashion | Fashion |
+| amenity\_college, amenity\_university | University |
 
 ## Messaging API
 
