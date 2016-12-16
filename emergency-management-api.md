@@ -14,14 +14,14 @@ API untuk Emergency Management terdiri dari 3 jenis:
 
 ### Get Places
 
-`GET /placeService/places      
+`GET /api/placeService/places        
 Authorization: Bearer {{token}}`
 
 **URL parameters**
 
 | Name | Description |
 | :--- | :--- |
-| categories | comma-separated list of place categories. \(see below for recognized categories\) |
+| category | List of place categories, multiple parameters are supported. \(see below for recognized categories\) |
 | page | Page number, starts from 0. |
 | size | Page size. |
 | sort | Order by property. e.g. "name,asc" or "name,desc". Multiple sort parameters are supported. |
@@ -39,13 +39,13 @@ Place categories use OpenStreetMap tags, separated by "\_". Used keys are: [**am
 
 Response:
 
-`{    
-    "_embedded": {    
-        "places": [    
-            {    
-            }    
-        ]    
-    }    
+`{      
+    "_embedded": {      
+        "places": [      
+            {      
+            }      
+        ]      
+    }      
 }`
 
 ## Messaging API
