@@ -97,21 +97,21 @@ Struktur database ACT, Semut Parking, Opang, dan Emergency Management, dideskrip
 | ID | int\(11\) |  |  |
 | Name | varchar\(100\) |  |  |
 | Email | varchar\(100\) |  |  |
-| CountryCode | int\(11\) |  |  |
+| CountryCode | int\(11\) |  | change type to varchar\(255\) |
 | PhoneNumber | varchar\(20\) |  |  |
-| Gender | int\(11\) |  |  |
+| Gender | int\(11\) |  | change type to varchar\(255\) |
 | Birthday | date |  |  |
-| Password | text |  |  |
+| Password | text | MD5 unsalted hash | Use bcrypt |
 | Joindate | datetime |  |  |
 | Poin | int\(11\) |  |  |
 | PoinLevel | int\(11\) |  |  |
 | AvatarID | int\(11\) |  |  |
 | facebookID | varchar\(64\) |  |  |
-| Verified | int\(11\) |  |  |
+| Verified | int\(11\) |  | change type to varchar\(255\) |
 | VerifiedNumber | varchar\(50\) |  |  |
-| Visibility | int\(11\) |  |  |
-| Reputation | int\(11\) |  |  |
-| flag | int\(11\) |  |  |
+| Visibility | int\(11\) |  | change type to varchar\(255\) |
+| Reputation | int\(11\) |  | change type to varchar\(255\) |
+| flag | int\(11\) |  | change type to varchar\(255\) |
 | Barcode | varchar\(25\) |  |  |
 | deposit | float\(255,0\) |  | Type: numeric\(32,8\) |
 | ID\_role | int\(255\) |  |  |
@@ -119,13 +119,23 @@ Struktur database ACT, Semut Parking, Opang, dan Emergency Management, dideskrip
 | ID\_ktp | int\(255\) |  |  |
 | foto | text |  |  |
 | PushID | varchar\(255\) |  |  |
-| Status\_online | int\(255\) |  |  |
+| Status\_online | int\(255\) |  | change type to varchar\(255\) |
 | Path\_foto | varchar\(255\) |  |  |
 | Nama\_foto | varchar\(50\) |  |  |
 | Path\_ktp | varchar\(255\) |  |  |
-| Nama\_ktp | varchar\(50\) |  |  |
+| Nama\_ktp | varchar\(50\) |  |   |
 
 ## tb\_user\_admin
+
+| Name | Type | Description | Note for next version |
+| :--- | :--- | :--- | :--- |
+| ID | int\(11\) |  |  |
+| Username | varchar\(255\) |  |  |
+| Password | text | Unsalted MD5 hash | Use bcrypt; change type to varchar\(255\)  |
+| Email | varchar\(255\) |  |  |
+| Realname | varchar\(255\) |  |  |
+| Type | int\(11\) |  | change type to varchar\(255\) |
+| Status | int\(11\) |  | change type to varchar\(255\) |
 
 ## tb\_vehicle\_type
 
