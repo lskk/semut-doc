@@ -53,8 +53,8 @@ Struktur database ACT, Semut Parking, Opang, dan Emergency Management, dideskrip
 | Name | varchar\(100\) |  |  |
 | Description | varchar\(250\) |  |  |
 | Address | text |  |  |
-| Longitude | double |  |  |
-| Latitude | double |  |  |
+| Longitude | double |  | Tambahkan [kolom geospatial](http://dev.mysql.com/doc/refman/5.7/en/creating-spatial-columns.html) agar dapat di-_query_ dengan [spatial index](http://dev.mysql.com/doc/refman/5.7/en/using-spatial-indexes.html). |
+| Latitude | double |  | \(idem\) |
 | CreateBy | int\(11\) | Creator. Foreign key to **tb\_user** table |  |
 | Foto | int\(11\) | Photo. Foreign key to photo table? \(currently every row is NULL\) |  |
 
