@@ -55,14 +55,14 @@ Struktur database ACT, Semut Parking, Opang, dan Emergency Management, dideskrip
 | Address | text |  |  |
 | Longitude | double |  |  |
 | Latitude | double |  |  |
-| CreateBy | int\(11\) |  |  |
-| Foto | int\(11\) |  |  |
+| CreateBy | int\(11\) | Creator. Foreign key to **tb\_user** table |  |
+| Foto | int\(11\) | Photo. Foreign key to photo table? \(currently every row is NULL\) |  |
 
 ## tb\_place\_type
 
 | Name | Type | Description | Note for next version |
 | :--- | :--- | :--- | :--- |
-| ID | int\(11\) | ID | Gunakan OpenStreetMap tag \(misal untuk Hotel menjadi **tourism\_hotel**\)  |
+| ID | int\(11\) | ID | Gunakan OpenStreetMap tag \(misal untuk Hotel menjadi **tourism\_hotel**\) |
 | Name | varchar\(50\) | Nama jenis tempat |  |
 
 Table contents:
