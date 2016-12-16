@@ -34,6 +34,5 @@ Angkot Tracer - Sensor, for Android:[https://play.google.com/store/apps/details?
 
 ## Opang
 
-Opang for Android:[https://play.google.com/store/apps/details?id=opang.pptik.startup.opang](https://play.google.com/store/apps/details?id=opang.pptik.startup.opang)  
-
+Opang for Android:[https://play.google.com/store/apps/details?id=opang.pptik.startup.opang](https://play.google.com/store/apps/details?id=opang.pptik.startup.opang)
 
