@@ -14,7 +14,7 @@ API untuk Emergency Management terdiri dari 3 jenis:
 
 ### Get Places
 
-`GET /places    
+`GET /placeService/places      
 Authorization: Bearer {{token}}`
 
 **URL parameters**
@@ -39,13 +39,13 @@ Place categories use OpenStreetMap tags, separated by "\_". Used keys are: [**am
 
 Response:
 
-`{  
-    "_embedded": {  
-        "places": [  
-            {  
-            }  
-        ]  
-    }  
+`{    
+    "_embedded": {    
+        "places": [    
+            {    
+            }    
+        ]    
+    }    
 }`
 
 ## Messaging API
