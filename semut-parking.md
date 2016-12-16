@@ -22,10 +22,11 @@ Lokasi CCTV untuk ditampilkan di peta.
 | Name | Type | Description | Note for next version |
 | :--- | :--- | :--- | :--- |
 | ID | int\(11\) |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| ItemID | int\(11\) | Foreign key ke** tabel tb\_place\_type** |  |
+| Name |  | Nama |  |
+| Latitude |  |  |  |
+| Longitude |  |  |  |
+| CodeName |  | Nama unik |  |
 
 ## tb\_parking\_history
 
