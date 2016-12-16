@@ -14,9 +14,11 @@ API untuk Emergency Management terdiri dari 3 jenis:
 
 ### Get Places
 
-`GET /api/places  
-Accept: application/json  
-Authorization: Bearer {{token}}`
+```
+GET /api/places
+Accept: application/json
+Authorization: Bearer {{token}}
+```
 
 **URL parameters**
 
@@ -87,9 +89,11 @@ Sample response:
 
 ### Search Places by Category
 
-`GET /api/placeService/places          
-Accept: application/json  
-Authorization: Bearer {{token}}`
+```
+GET /api/placeService/places            
+Accept: application/json    
+Authorization: Bearer {{token}}
+```
 
 **URL parameters**
 
@@ -111,16 +115,51 @@ Place categories use OpenStreetMap tags, separated by "\_". Used keys are: [**am
 | shop\_fashion | Fashion |
 | amenity\_college, amenity\_university | University |
 
-Response:
+Sample request:
 
-`{        
-    "_embedded": {        
-        "places": [        
-            {        
-            }        
-        ]        
-    }        
-}`
+```
+GET /api/placeService/places?category=amenity_hospital
+```
+
+Sample response:
+
+```
+{
+  "_embedded": {
+    "places": [
+      {
+        "id": 153,
+        "typeId": 7,
+        "name": "Puskesmas Karang Setra",
+        "description": null,
+        "address": "",
+        "longitude": 107.5911377,
+        "latitude": -6.8773969,
+        "createdBy": 0,
+        "photo": null
+      },
+      {
+        "id": 154,
+        "typeId": 7,
+        "name": "Puskesmas Sukajadi",
+        "description": null,
+        "address": "",
+        "longitude": 107.5944038,
+        "latitude": -6.8922013,
+        "createdBy": 0,
+        "photo": null
+      },
+      ...
+    ]
+  },
+  "page": {
+    "size": 10,
+    "totalElements": 41,
+    "totalPages": 5,
+    "number": 0
+  }
+}
+```
 
 ## Messaging API
 
