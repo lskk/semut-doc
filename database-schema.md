@@ -1,3 +1,5 @@
+# Database Schema for Semut
+
 Database yang digunakan adalah MySQL.
 
 Untuk memudahkan integrasi saat deployment, database Semut juga digunakan oleh ACT, Semut Parking, Opang, dan Emergency Management.
