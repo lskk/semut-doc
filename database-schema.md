@@ -92,19 +92,19 @@ Struktur database ACT, Semut Parking, Opang, dan Emergency Management, dideskrip
 
 | Name | Type | Description | Note for next version |
 | :--- | :--- | :--- | :--- |
-| ID |  |  |  |
-| Name |  |  |  |
-| Email |  |  |  |
-| CountryCode |  |  |  |
-| PhoneNumber |  |  |  |
-| Gender |  |  |  |
-| Birthday |  |  |  |
-| Password |  |  |  |
-| Joindate |  |  |  |
-| Poin |  |  |  |
-| PoinLevel |  |  |  |
-| AvatarID |  |  |  |
-| facebookID |  |  |  |
+| ID | int\(11\) |  |  |
+| Name | varchar\(100\) |  |  |
+| Email | varchar\(100\) |  |  |
+| CountryCode | int\(11\) |  |  |
+| PhoneNumber | varchar\(20\) |  |  |
+| Gender | int\(11\) |  |  |
+| Birthday | date |  |  |
+| Password | text |  |  |
+| Joindate | datetime |  |  |
+| Poin | int\(11\) |  |  |
+| PoinLevel | int\(11\) |  |  |
+| AvatarID | int\(11\) |  |  |
+| facebookID | varchar\(64\) |  |  |
 | Verified | int\(11\) |  |  |
 | VerifiedNumber | varchar\(50\) |  |  |
 | Visibility | int\(11\) |  |  |
