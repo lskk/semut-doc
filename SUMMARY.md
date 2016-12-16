@@ -18,7 +18,5 @@
 
 * [Defining Methods](methods.md)
 
-## 
-
 
 
