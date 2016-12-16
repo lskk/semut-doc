@@ -12,16 +12,19 @@ API untuk Emergency Management terdiri dari 3 jenis:
 
 ## REST API
 
-Get Places
+### Get Places
 
-GET /places
+`GET /places  
+Authorization: Bearer {{token}}`
 
-URL parameters
+**URL parameters**
 
 | Name | Description |
 | :--- | :--- |
 | categories | comma-separated list of place categories. \(see below for recognized categories\) |
-|  |  |
+| page | Page number, starts from 0. |
+| size | Page size. |
+| sort | Order by property. e.g. "name,asc" or "name,desc". Multiple sort parameters are supported. |
 
 Place categories use OpenStreetMap tags, separated by "\_". Used keys are: [**amenity**](https://wiki.openstreetmap.org/wiki/Key:amenity), [**shop**](https://wiki.openstreetmap.org/wiki/Key:shop), [**tourism**](https://wiki.openstreetmap.org/wiki/Key:tourism). Most used categories include:
 
