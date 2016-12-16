@@ -23,10 +23,10 @@ Lokasi CCTV untuk ditampilkan di peta.
 | :--- | :--- | :--- | :--- |
 | ID | int\(11\) |  |  |
 | ItemID | int\(11\) | Foreign key ke** tabel tb\_place\_type** |  |
-| Name |  | Nama |  |
-| Latitude |  |  |  |
-| Longitude |  |  |  |
-| CodeName |  | Nama unik |  |
+| Name | text | Nama |  |
+| Latitude | double |  |  |
+| Longitude | double |  |  |
+| CodeName | text | Nama unik |  |
 
 ## tb\_parking\_history
 
@@ -34,7 +34,12 @@ Histori tiap lot. Misalnya lot1 diisi oleh user tertentu dalam rentang waktu ter
 
 | Name | Type | Description | Note for next version |
 | :--- | :--- | :--- | :--- |
-|  |  | ID |  |
+| id\_history\_parking | int\(20\) | ID |  |
+| lot\_id | varchar\(50\) |  |  |
+| start\_time | varchar\(50\) |  |  |
+| end\_time | varchar\(50\) |  |  |
+| lot\_pay | varchar\(50\) |  |  |
+| user\_id | varchar\(50\) |  |  |
 
 ## Notes
 
