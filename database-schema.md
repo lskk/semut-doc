@@ -46,7 +46,40 @@ Struktur database ACT, Semut Parking, Opang, dan Emergency Management, dideskrip
 
 ## tb\_place
 
+| Name | Type | Description | Note for next version |
+| :--- | :--- | :--- | :--- |
+| ID | int\(11\) |  |  |
+| TypeID | int\(11\) |  | Gunakan OpenStreetMap tag \(misal untuk Hotel menjadi **tourism\_hotel**\) |
+| Name | varchar\(100\) |  |  |
+| Description | varchar\(250\) |  |  |
+| Address | text |  |  |
+| Longitude | double |  |  |
+| Latitude | double |  |  |
+| CreateBy | int\(11\) |  |  |
+| Foto | int\(11\) |  |  |
+
 ## tb\_place\_type
+
+| Name | Type | Description | Note for next version |
+| :--- | :--- | :--- | :--- |
+| ID | int\(11\) | ID | Gunakan OpenStreetMap tag \(misal untuk Hotel menjadi **tourism\_hotel**\)  |
+| Name | varchar\(50\) | Nama jenis tempat |  |
+
+Table contents:
+
+| ID | Name | \(OpenStreetMap tag equivalent\) |
+| :--- | :--- | :--- |
+| 1 | Food | amenity=restaurant |
+| 2 | Hotel | tourism=hotel |
+| 3 | Fashion | shop=fashion |
+| 4 | Gas Station | amenity=fuel |
+| 5 | School | amenity=school |
+| 6 | University | amenity=university |
+| 7 | Hospital | amenity=hospital |
+| 8 | Bank | amenity=bank |
+| 9 | Station | railway=station |
+| 10 | Department Store | shop=mall |
+| 11 | Parking Area | amenity=parking |
 
 ## tb\_police
 
