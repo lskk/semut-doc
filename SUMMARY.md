@@ -9,6 +9,7 @@
 ## Database Schemas
 * [Semut Database Schema](database-schema.md)
 * [Emergency Management Database Schema](database-schema-for-emergency-management.md)
+* [Semut Parking Database Schema](semut-parking.md)
 
 ## API Services
 * [Emergency Management API](emergency-management-api.md)

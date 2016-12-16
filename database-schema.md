@@ -42,17 +42,7 @@ Struktur database ACT, Semut Parking, Opang, dan Emergency Management, dideskrip
 
 ## tb\_location
 
-## tb\_lskk\_parking
-
-## tb\_lskk\_parking\_history
-
 ## tb\_node
-
-## tb\_parking
-
-## tb\_parking\_cctv
-
-## tb\_parking\_history
 
 ## tb\_place
 
@@ -123,7 +113,7 @@ Struktur database ACT, Semut Parking, Opang, dan Emergency Management, dideskrip
 | Path\_foto | varchar\(255\) |  |  |
 | Nama\_foto | varchar\(50\) |  |  |
 | Path\_ktp | varchar\(255\) |  |  |
-| Nama\_ktp | varchar\(50\) |  |   |
+| Nama\_ktp | varchar\(50\) |  |  |
 
 ## tb\_user\_admin
 
@@ -131,7 +121,7 @@ Struktur database ACT, Semut Parking, Opang, dan Emergency Management, dideskrip
 | :--- | :--- | :--- | :--- |
 | ID | int\(11\) |  |  |
 | Username | varchar\(255\) |  |  |
-| Password | text | Unsalted MD5 hash | Use bcrypt; change type to varchar\(255\)  |
+| Password | text | Unsalted MD5 hash | Use bcrypt; change type to varchar\(255\) |
 | Email | varchar\(255\) |  |  |
 | Realname | varchar\(255\) |  |  |
 | Type | int\(11\) |  | change type to varchar\(255\) |
