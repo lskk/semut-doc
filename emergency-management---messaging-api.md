@@ -10,6 +10,7 @@ Routing Key: `emergency`
 4. Durasi data capture idealnya configurable di sensor, misal per durasi 1 detik, 2 detik, 10 detik, dsb.
 
 Contoh message:
+
 ```json
 {
     "pointTime": "2016-12-15T10:04:41Z",
@@ -17,7 +18,7 @@ Contoh message:
     "interval": 25,
     "geometry": {
     "type": "Point",
-    "coordinates": [125.6, 10.1]
+    "coordinates": [107.6102443, -6.8918592]
     },
     "accelerations": [
         {
