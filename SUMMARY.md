@@ -13,6 +13,7 @@
 
 ## API Services
 * [Emergency Management API](emergency-management-api.md)
+    * [Messaging API](emergency-management---messaging-api.md)
 
 ## Methods
 * [Defining Methods](methods.md)
