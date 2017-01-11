@@ -15,6 +15,8 @@
 * [Emergency Management API](emergency-management-api.md)
     * [REST API](rest-api.md)
     * [Messaging API](emergency-management---messaging-api.md)
+* [Semut App API](semut-app-api.md)
+    * [Messaging API](messaging-api.md)
 
 ## Methods
 * [Defining Methods](methods.md)
