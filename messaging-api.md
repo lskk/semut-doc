@@ -10,7 +10,7 @@ Type : `topic`
 
 Menggunakan protokol `RPC` , Setiap request mengembalikan callback berupa JSON yang sesuai dengan kebutuhan permintaan, karenanya tiap consumer/pengguna wajib membuat antrian dengan format berikut :
 
-`semut.user.<id user>` sehingga mendapatkan callback yang berbeda untuk tiap pengguna \(kecuali pada saat proses login\).
+`semut.user.<id user>` sehingga mendapatkan callback yang berbeda untuk tiap pengguna \(kecuali pada saat proses login dan register\).
 
 * ### Login
 
@@ -20,53 +20,104 @@ Queue : `<generated>`
 
 Reply To :  `<generated>`
 
-Request : `{email: "<email pengguna>", password: "<sandi pengguna>"}`
+**Request** : `{email: "<email pengguna>", password: "<sandi pengguna>"}`
 
-Response :
+**Response** :
 
 ```json
 {
 
-	"response": {
+    "response": {
 
-		"success": true,
+        "success": true,
 
-		"message": "Berhasil Login!",
+        "message": "Berhasil Login!",
 
-		"Profile": {
+        "Profile": {
 
-			"Name": "hafiyyan",
+            "Name": "hafiyyan",
 
-			"Email": "hafiyyan.jtk10@gmail.com",
+            "Email": "hafiyyan.jtk10@gmail.com",
 
-			"CountryCode": 62,
+            "CountryCode": 62,
 
-			"PhoneNumber": null,
+            "PhoneNumber": null,
 
-			"Gender": 1,
+            "Gender": 1,
 
-			"Birthday": null,
+            "Birthday": null,
 
-			"Joindate": "2015-09-02T05:27:16.000Z",
+            "Joindate": "2015-09-02T05:27:16.000Z",
 
-			"Poin": 1100,
+            "Poin": 1100,
 
-			"Poinlevel": 100,
+            "Poinlevel": 100,
 
-			"Visibility": 0,
+            "Visibility": 0,
 
-			"Verified": 0,
+            "Verified": 0,
 
-			"AvatarID": 1
+            "AvatarID": 1
 
-		},
+        },
 
-		"sessionID": 2193
+        "sessionID": 2193
 
-	}
+    }
 
 }
 ```
 
-Contoh Client Request \(Menggunakan node js\) : [https://github.com/pptik/semut-mq-service/blob/master/amqp/tests/test_login.js](https://github.com/pptik/semut-mq-service/blob/master/amqp/tests/test_login.js)
+Contoh Client Request \(Menggunakan node js\) : [https://github.com/pptik/semut-mq-service/blob/master/amqp/tests/test\_login.js](https://github.com/pptik/semut-mq-service/blob/master/amqp/tests/test_login.js)
+
+* ### Register {#register}
+
+Routing Key : `semut.service.app.register`
+
+Queue : `<generated>`
+
+Reply To :  `<generated>`
+
+**Request** :
+
+```json
+{
+    email: "5@test.com",
+    phonenumber: "081311415274",
+    gender: 1,
+    birthday: "1991-09-20",
+    password: "qwerty",
+    name: "test"
+}
+```
+
+`email` : Email pengguna
+
+`phonenumber` : Nomor Pengguna
+
+`gender` : 1 = Pria, 2 = Wanita
+
+`birthday` : Tanggal lahir pengguna, format : `YYYY-MM-DD`
+
+`password` : Kata sandi pengguna.
+
+`name` : Nama Pengguna.
+
+**Response** :
+
+```json
+{
+
+    "response": {
+
+        "success": true,
+
+        "message": "Sukses Membuat Akun, silahkan login!"
+
+    }
+
+}
+```
+
+Contoh Client Request \(Menggunakan node js\) : [https://github.com/pptik/semut-mq-service/blob/master/amqp/tests/test\_register.js](https://github.com/pptik/semut-mq-service/blob/master/amqp/tests/test_register.js)
 
