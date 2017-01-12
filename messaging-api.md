@@ -82,12 +82,12 @@ Reply To :  `<generated>`
 
 ```json
 {
-    email: "5@test.com",
-    phonenumber: "081311415274",
-    gender: 1,
-    birthday: "1991-09-20",
-    password: "qwerty",
-    name: "test"
+    "email": "5@test.com",
+    "phonenumber": "081311415274",
+    "gender": 1,
+    "birthday": "1991-09-20",
+    "password": "qwerty",
+    "name": "test"
 }
 ```
 
