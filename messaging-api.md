@@ -121,3 +121,47 @@ Reply To :  `<generated>`
 
 Contoh Client Request \(Menggunakan node js\) : [https://github.com/pptik/semut-mq-service/blob/master/amqp/tests/test\_register.js](https://github.com/pptik/semut-mq-service/blob/master/amqp/tests/test_register.js)
 
+* ### Get Profile {#register}
+
+Routing Key : `semut.service.app.getprofile`
+
+Queue : `semut.user.<id pengguna>`
+
+Reply To :  `semut.user.<id pengguna>`
+
+`<id pengguna>`  bisa didapat setelah berhasil melakukan proses login.
+
+**Request** : `{sessionID: <session id pengguna>}`
+
+`sessionID` : adalah kode session yang didapat dari proses login.
+
+**Response** :
+
+```json
+{
+    "response": {
+        "success": true,
+        "message": "Sukses memuat permintaan",
+        "Profile": {
+            "ID": 418,
+            "Name": "hafiyyan",
+            "Email": "hafiyyan.jtk10@gmail.com",
+            "CountryCode": 62,
+            "PhoneNumber": null,
+            "Gender": 1,
+            "Birthday": null,
+            "Joindate": "2015-09-02T05:27:16.000Z",
+            "Poin": 1100,
+            "PoinLevel": 100,
+            "AvatarID": 1,
+            "Verified": 0,
+            "Visibility": 0,
+            "Reputation": 2,
+            "deposit": 1000000
+        }
+    }
+}
+```
+
+Contoh Client Request \(Menggunakan node js\) : [https://github.com/pptik/semut-mq-service/blob/master/amqp/tests/test\_getprofile.js](https://github.com/pptik/semut-mq-service/blob/master/amqp/tests/test_getprofile.js)
+
